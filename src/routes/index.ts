@@ -9,6 +9,10 @@ mainRouter.get('/', (req: Request, res: Response) => {
     res.status(200).end();
 });
 
+mainRouter.get('/test', (req: Request, res: Response) => {
+    res.status(200).end();
+});
+
 mainRouter.post('/historico', express.json());
 
 mainRouter.post('/transcricao', express.json(), downloadController.downloadAudio);
